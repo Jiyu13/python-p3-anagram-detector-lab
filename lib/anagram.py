@@ -6,9 +6,9 @@ class Anagram:
 
     
     def match(self, word_list):
-        self.word_list = word_list
+
         reversed = self.word[::-1]
-        for word in self.word_list:
+        for word in word_list:
             if word == reversed:
                 return word
             else:
