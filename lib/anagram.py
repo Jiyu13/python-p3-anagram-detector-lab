@@ -6,10 +6,10 @@ class Anagram:
 
     
     def match(self, word_list):
-
-        reversed = self.word[::-1]
+        
         for word in word_list:
-            if word == reversed:
+            
+            if word == self.word:
                 return word
             else:
                 return []
