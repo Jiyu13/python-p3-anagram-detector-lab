@@ -6,10 +6,13 @@ class Anagram:
 
     
     def match(self, word_list):
-        
+
+        matched_words = []
+        given_word_letters = sorted(list(self.word))
+
         for word in word_list:
-            
-            if word == self.word:
-                return word
-            else:
-                return []
+            word_letters = sorted(list(word))
+            if word_letters == given_word_letters:
+                matched_words.append(word)
+        return matched_words
+        
